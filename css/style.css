@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline:0;
+    border: none;
+    border-radius: 0rem;
+    user-select: none;
+}
+.scene {
+    background: linear-gradient(46deg, rgb(230, 52, 81), rgb(73, 234, 73));
+    height: 100vh;
+}
+nav {
+    mix-blend-mode: difference;
+    height: 3rem;
+    background:linear-gradient(34deg, red, rgb(60, 60, 248));
+    position: fixed;
+    z-index: 12rem;
+    width: calc(100% - 2rem);
+    left: 1rem;
+    top: 1rem;
+    border-radius: 155rem;
+}
+nav::before {
+    box-shadow: 6px 15px 37px 13px rgba(0,0,0,1);
+
+}
+.scene .dock {
+    background-color: rgb(59, 7, 157);
+    padding: 2rem;
+    width: max-content;
+    margin: 0% 50%;
+    border-radius: 1.3rem;
+    transform: translate(-50%, 50%);
+}
+
+.scene .dock .row {
+    padding: .5rem 0rem .5rem 0rem;
+}
+.scene .dock .delta {
+    display: flex;
+    /* margin: .5rem 0 .5rem 0; */
+    position: relative;
+
+}
+
+.scene .dock .delta .icon{
+    position: absolute;
+    width: 2.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.6rem;
+    left: 0;
+    top: 0;
+}
+
+.scene .dock .delta .textbox input {
+    background-color: rgb(219, 224, 211);
+    padding: .6rem 1rem .6rem 2.2rem;
+    font-size: 1.1rem;
+    transition: all .3s;
+    border-radius: 13rem;
+    
+}
+
+.scene .dock .delta .textbox input:focus {
+    border-radius: .4rem;
+}
+.scene .dock .form-btn {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.scene .dock .form-btn button {
+    padding: .6rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 12rem;
+    width: calc(50% - .6rem);
+    transition: .2s;
+}
+.scene .dock .form-btn button:nth-child(1) {
+    background-color: rgb(255, 16, 16);
+    color: white;
+
+}
+.scene .dock .form-btn button:nth-child(2) {
+    background-color: rgb(64, 244, 64);
+}
+.scene .dock .form-btn button:nth-child(1):hover {
+    background-color: rgb(165, 13, 13);
+}
+.scene .dock .form-btn button:nth-child(2):hover {
+    color: white;
+    background-color: rgb(11, 153, 11);
+}
+#mode {
+    position: fixed;
+    bottom: .75rem;
+    background-color: rgb(19, 18, 18);
+    width: 3rem;
+    height: 3rem;
+    left: .75rem;
+    border-radius: 50%;
+    line-height: 3rem;
+    text-align: center;
+    color: white;
+    z-index: 100000;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.white {
+    background-color: rgb(232, 218, 218) !important;
+    rotate: 360deg;
+    transition: .5s;
+    font-size: 0 !important;
+    color: transparent !important;
+}
+.white span {
+    width: 2rem !important;
+    height: 2rem !important;
+    display: block;
+    position: fixed;
+    left: .5rem;
+    bottom: .5rem;
+    background-color: rgb(195, 176, 0);
+    border-radius: 50%;
+}
+#theme {
+    position: fixed;
+    bottom: .75rem;
+    width: 3rem;
+    height: 3rem;
+    left: .75rem;
+    border-radius: 50%;
+    transition: .5s;
+}
+.dark {
+    width: 100%!important;
+    border-radius: 0!important;
+    left: 0!important;
+    right: 0!important;
+    bottom: 0!important;
+    height: 100vh!important;
+    /* z-index: 144444444444; */
+    position: fixed;
+    background-color: black!important;
+    mix-blend-mode:darken;
+}
